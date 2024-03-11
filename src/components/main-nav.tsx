@@ -57,7 +57,7 @@ export function MainNav() {
     return (
         <div className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-3 border-b bg-white">
             <div className="flex items-center space-x-4">
-                <Logo />
+                <Logo className=""/>
                 <NavigationMenu>
                     <NavigationMenuList>
                         <NavigationMenuItem>
@@ -133,10 +133,8 @@ export function MainNav() {
                     </NavigationMenuList>
                 </NavigationMenu>
             </div>
-
             <AuthButtons />
         </div>
-
 
     )
 }
@@ -144,10 +142,10 @@ export function MainNav() {
 const AuthButtons = () => {
     return (
         <div className="flex items-center space-x-2">
-            <Link href="/">
+            <Link href="/authentication">
                 <p className="px-4 py-2 text-sm font-medium text-black bg-white hover:bg-gray-100 rounded-md">Log in</p>
             </Link>
-            <Link href="/login">
+            <Link href="/authentication">
                 <p className="px-4 py-2 text-sm font-medium text-white bg-black hover:bg-gray-900 rounded-md">Get Uninote free</p>
             </Link>
         </div>

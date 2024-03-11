@@ -17,7 +17,7 @@ export default function Home() {
           <p className="text-lg text-center font-bold text-gray-800">
             Uninotes is the connected workspace where better, faster work happens.
           </p>
-          <Link href="/login">
+          <Link href="/authentication">
             <p className="px-4 py-2 text-sm font-medium text-white bg-black hover:bg-gray-900 rounded-md">Get Uninote free</p>
           </Link>
         </Flex>
